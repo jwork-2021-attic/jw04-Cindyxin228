@@ -1,4 +1,4 @@
-package com.anish.calabashbros;
+package com.anish.monsters;
 
 import asciiPanel.AsciiPanel;
 

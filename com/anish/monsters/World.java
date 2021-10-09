@@ -1,4 +1,4 @@
-package com.anish.calabashbros;
+package com.anish.monsters;
 
 public class World {
 
@@ -27,6 +27,16 @@ public class World {
 
     public void put(Thing t, int x, int y) {
         this.tiles[x][y].setThing(t);
+    }
+
+    public void putMatrix(Matrix matrix, int size) {
+        int rowStart = (WIDTH - size) / 2 - 1;
+        int colStart = (HEIGHT - size) / 2 - 1;
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                put(matrix.monsters[i][j], rowStart + i, colStart + j);
+            }
+        }
     }
 
 }

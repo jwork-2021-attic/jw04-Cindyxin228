@@ -1,4 +1,4 @@
-package com.anish.calabashbros;
+package com.anish.monsters;
 
 public class BubbleSorter<T extends Comparable<T>> implements Sorter<T> {
 
